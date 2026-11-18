@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Module C&amp;B: Bảo hiểm, chấm công và ca, nghỉ phép, tăng ca, tiền lương, NPT, công đoàn, Chatbot AI và thư viện điện tử. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Hrms.UnitTests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Hrms.Infrastructure\Hrms.Infrastructure.csproj" />
+    <ProjectReference Include="..\Hrms.Modules.CnB.Contracts\Hrms.Modules.CnB.Contracts.csproj" />
+  </ItemGroup>
+</Project>

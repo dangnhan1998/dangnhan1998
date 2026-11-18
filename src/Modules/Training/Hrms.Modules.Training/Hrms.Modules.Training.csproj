@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Module Đào tạo: Nhu cầu và kế hoạch đào tạo, lớp học, E-Learning, thi, cam kết đào tạo, chứng chỉ. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Hrms.UnitTests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Hrms.Infrastructure\Hrms.Infrastructure.csproj" />
+    <ProjectReference Include="..\Hrms.Modules.Training.Contracts\Hrms.Modules.Training.Contracts.csproj" />
+  </ItemGroup>
+</Project>

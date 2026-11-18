@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Công cụ chuyển dữ liệu lịch sử từ PMNS cũ (.NET 4.0 + SQL Server) sang HRMS mới và lập báo cáo đối soát. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Hrms.Infrastructure\Hrms.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

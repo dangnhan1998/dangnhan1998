@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!--
+    Tiến trình chạy duy nhất của backend (modular monolith):
+    - REST API /api/... cho App MAUI và tích hợp
+    - Host giao diện Web Blazor (Hrms.Web)
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <UserSecretsId>hrms-intimex-api</UserSecretsId>
+    <!-- Host không chứa file .razor nên phải bật tay để phục vụ _framework/blazor.web.js -->
+    <RequiresAspNetWebAssets>true</RequiresAspNetWebAssets>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hrms.Web\Hrms.Web.csproj" />
+    <ProjectReference Include="..\Shared\Hrms.Infrastructure\Hrms.Infrastructure.csproj" />
+    <ProjectReference Include="..\Modules\Foundation\Hrms.Modules.Foundation\Hrms.Modules.Foundation.csproj" />
+    <ProjectReference Include="..\Modules\Recruitment\Hrms.Modules.Recruitment\Hrms.Modules.Recruitment.csproj" />
+    <ProjectReference Include="..\Modules\Personnel\Hrms.Modules.Personnel\Hrms.Modules.Personnel.csproj" />
+    <ProjectReference Include="..\Modules\Training\Hrms.Modules.Training\Hrms.Modules.Training.csproj" />
+    <ProjectReference Include="..\Modules\CnB\Hrms.Modules.CnB\Hrms.Modules.CnB.csproj" />
+  </ItemGroup>
+</Project>

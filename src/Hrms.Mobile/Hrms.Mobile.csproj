@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <!--
+    App di động .NET MAUI Blazor Hybrid. Giao diện lấy từ Hrms.UI (dùng chung với Web),
+    dữ liệu lấy qua REST API của Hrms.Api.
+    Cần workload MAUI: dotnet workload install maui (chỉ build được trên Windows/macOS).
+  -->
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-android</TargetFrameworks>
+    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('osx'))">$(TargetFrameworks);net10.0-ios</TargetFrameworks>
+    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
+
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Hrms.Mobile</RootNamespace>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+    <EnableDefaultCssItems>false</EnableDefaultCssItems>
+
+    <ApplicationTitle>HRMS Intimex</ApplicationTitle>
+    <ApplicationId>vn.com.intimex.hrms</ApplicationId>
+    <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <WindowsPackageType>None</WindowsPackageType>
+
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">24.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+    <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#1565C0" />
+    <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#1565C0" BaseSize="128,128" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Maui.Controls" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hrms.UI\Hrms.UI.csproj" />
+  </ItemGroup>
+</Project>

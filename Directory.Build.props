@@ -1,0 +1,14 @@
+<Project>
+  <!-- Thiết lập chung cho mọi project trong solution -->
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors Condition="'$(CI)' == 'true'">true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <Company>Intimex</Company>
+    <Product>HRMS Intimex</Product>
+  </PropertyGroup>
+</Project>

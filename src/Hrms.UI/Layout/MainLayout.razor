@@ -1,0 +1,18 @@
+@inherits LayoutComponentBase
+
+@* Layout chung cho Web và App. Phần khác biệt theo nền tảng xử lý bằng service, không tách layout. *@
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudText Typo="Typo.h6">HRMS Intimex</MudText>
+    </MudAppBar>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.ExtraLarge" Class="py-4">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+</MudLayout>

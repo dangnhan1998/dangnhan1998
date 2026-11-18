@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <!--
+    Giao diện Web (Blazor, Interactive Server). Chạy chung tiến trình với Hrms.Api.
+    Chỉ đặt ở đây những trang riêng cho Web (quản trị, trang tuyển dụng công khai Static SSR);
+    trang dùng chung với App đặt ở Hrms.UI.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hrms.UI\Hrms.UI.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,47 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Hrms.Api/Hrms.Api.csproj" />
+    <Project Path="src/Hrms.Web/Hrms.Web.csproj" />
+    <Project Path="src/Hrms.UI/Hrms.UI.csproj" />
+    <Project Path="src/Hrms.Mobile/Hrms.Mobile.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Foundation/">
+    <Project Path="src/Modules/Foundation/Hrms.Modules.Foundation/Hrms.Modules.Foundation.csproj" />
+    <Project Path="src/Modules/Foundation/Hrms.Modules.Foundation.Contracts/Hrms.Modules.Foundation.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Recruitment/">
+    <Project Path="src/Modules/Recruitment/Hrms.Modules.Recruitment/Hrms.Modules.Recruitment.csproj" />
+    <Project Path="src/Modules/Recruitment/Hrms.Modules.Recruitment.Contracts/Hrms.Modules.Recruitment.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Personnel/">
+    <Project Path="src/Modules/Personnel/Hrms.Modules.Personnel/Hrms.Modules.Personnel.csproj" />
+    <Project Path="src/Modules/Personnel/Hrms.Modules.Personnel.Contracts/Hrms.Modules.Personnel.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Training/">
+    <Project Path="src/Modules/Training/Hrms.Modules.Training/Hrms.Modules.Training.csproj" />
+    <Project Path="src/Modules/Training/Hrms.Modules.Training.Contracts/Hrms.Modules.Training.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/CnB/">
+    <Project Path="src/Modules/CnB/Hrms.Modules.CnB/Hrms.Modules.CnB.csproj" />
+    <Project Path="src/Modules/CnB/Hrms.Modules.CnB.Contracts/Hrms.Modules.CnB.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/Hrms.SharedKernel/Hrms.SharedKernel.csproj" />
+    <Project Path="src/Shared/Hrms.Infrastructure/Hrms.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Tools/">
+    <Project Path="src/Tools/Hrms.Migration/Hrms.Migration.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Hrms.UnitTests/Hrms.UnitTests.csproj" />
+    <Project Path="tests/Hrms.ArchitectureTests/Hrms.ArchitectureTests.csproj" />
+    <Project Path="tests/Hrms.IntegrationTests/Hrms.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="README.md" />
+    <File Path="CLAUDE.md" />
+  </Folder>
+</Solution>

@@ -1,0 +1,26 @@
+{
+  "solution": {
+    "path": "Hrms.slnx",
+    "projects": [
+      "src\\Hrms.Api\\Hrms.Api.csproj",
+      "src\\Hrms.Web\\Hrms.Web.csproj",
+      "src\\Hrms.UI\\Hrms.UI.csproj",
+      "src\\Modules\\Foundation\\Hrms.Modules.Foundation\\Hrms.Modules.Foundation.csproj",
+      "src\\Modules\\Foundation\\Hrms.Modules.Foundation.Contracts\\Hrms.Modules.Foundation.Contracts.csproj",
+      "src\\Modules\\Recruitment\\Hrms.Modules.Recruitment\\Hrms.Modules.Recruitment.csproj",
+      "src\\Modules\\Recruitment\\Hrms.Modules.Recruitment.Contracts\\Hrms.Modules.Recruitment.Contracts.csproj",
+      "src\\Modules\\Personnel\\Hrms.Modules.Personnel\\Hrms.Modules.Personnel.csproj",
+      "src\\Modules\\Personnel\\Hrms.Modules.Personnel.Contracts\\Hrms.Modules.Personnel.Contracts.csproj",
+      "src\\Modules\\Training\\Hrms.Modules.Training\\Hrms.Modules.Training.csproj",
+      "src\\Modules\\Training\\Hrms.Modules.Training.Contracts\\Hrms.Modules.Training.Contracts.csproj",
+      "src\\Modules\\CnB\\Hrms.Modules.CnB\\Hrms.Modules.CnB.csproj",
+      "src\\Modules\\CnB\\Hrms.Modules.CnB.Contracts\\Hrms.Modules.CnB.Contracts.csproj",
+      "src\\Shared\\Hrms.SharedKernel\\Hrms.SharedKernel.csproj",
+      "src\\Shared\\Hrms.Infrastructure\\Hrms.Infrastructure.csproj",
+      "src\\Tools\\Hrms.Migration\\Hrms.Migration.csproj",
+      "tests\\Hrms.UnitTests\\Hrms.UnitTests.csproj",
+      "tests\\Hrms.ArchitectureTests\\Hrms.ArchitectureTests.csproj",
+      "tests\\Hrms.IntegrationTests\\Hrms.IntegrationTests.csproj"
+    ]
+  }
+}
