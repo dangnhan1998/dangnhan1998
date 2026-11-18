@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Kiểu dữ liệu nền dùng chung cho mọi module. Không phụ thuộc ASP.NET Core hay EF Core. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+</Project>

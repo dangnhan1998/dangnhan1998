@@ -1,0 +1,7 @@
+@* Router của Web: gồm trang riêng của Web và trang dùng chung trong Hrms.UI. *@
+<Router AppAssembly="typeof(Routes).Assembly" AdditionalAssemblies="new[] { typeof(Hrms.UI.Layout.MainLayout).Assembly }">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(MainLayout)" />
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+    </Found>
+</Router>

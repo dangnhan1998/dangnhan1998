@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Kiểm tra ranh giới module: module chỉ được tham chiếu module khác qua project *.Contracts. -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Hrms.Api\Hrms.Api.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- API công khai của module C&amp;B: interface và DTO mà module khác, Hrms.UI và App được phép dùng. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Hrms.SharedKernel\Hrms.SharedKernel.csproj" />
+  </ItemGroup>
+</Project>

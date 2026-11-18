@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Module Nền tảng: Cơ cấu tổ chức, danh mục dùng chung, tài khoản và phân quyền (ASP.NET Core Identity), cấu hình ma trận phê duyệt, thông báo. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Hrms.UnitTests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Hrms.Infrastructure\Hrms.Infrastructure.csproj" />
+    <ProjectReference Include="..\Hrms.Modules.Foundation.Contracts\Hrms.Modules.Foundation.Contracts.csproj" />
+  </ItemGroup>
+</Project>

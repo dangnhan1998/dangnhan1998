@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Unit test nghiệp vụ, chia thư mục theo module. Bắt buộc với C&B (lương, BH, thuế). -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Modules\Foundation\Hrms.Modules.Foundation\Hrms.Modules.Foundation.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Recruitment\Hrms.Modules.Recruitment\Hrms.Modules.Recruitment.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Personnel\Hrms.Modules.Personnel\Hrms.Modules.Personnel.csproj" />
+    <ProjectReference Include="..\..\src\Modules\Training\Hrms.Modules.Training\Hrms.Modules.Training.csproj" />
+    <ProjectReference Include="..\..\src\Modules\CnB\Hrms.Modules.CnB\Hrms.Modules.CnB.csproj" />
+  </ItemGroup>
+</Project>

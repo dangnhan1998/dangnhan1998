@@ -1,0 +1,7 @@
+@host = https://localhost:7100
+
+GET {{host}}/health
+
+###
+
+GET {{host}}/api/modules

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Module Tuyển dụng: Định biên, yêu cầu tuyển dụng, ATS (ứng viên, phỏng vấn, Offer), Onboarding, báo cáo tuyển dụng. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Hrms.UnitTests" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Hrms.Infrastructure\Hrms.Infrastructure.csproj" />
+    <ProjectReference Include="..\Hrms.Modules.Recruitment.Contracts\Hrms.Modules.Recruitment.Contracts.csproj" />
+  </ItemGroup>
+</Project>
